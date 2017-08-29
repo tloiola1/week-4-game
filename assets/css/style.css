@@ -9,6 +9,7 @@ html, body{
     margin: 0;
 }
 
+
 header{
 	opacity: 0.6;
 	background-color: gray;
@@ -27,11 +28,13 @@ header{
 }
 
 #mainMenu{
+	display: none;
 	opacity: 0.6;
 	padding: 20px;
 	margin-top: 20px;
 }
 #number{
+	opacity: 0.6;
 	text-align: center;
 	padding: 20px;
 	margin-top: 20px;
@@ -62,5 +65,26 @@ img:hover{
 	.container{
 		padding-left: 60px !important;
 		padding-right: 60px !important;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.container{
+		padding: 5px !important;
+	}
+
+	.jumbotron{
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+
+	header{
+		margin-top: 0 !important;
+	}
+	#number{
+		margin-top: 5px !important;
+	}
+	#crystals{
+		margin-top: 0 !important;
 	}
 }

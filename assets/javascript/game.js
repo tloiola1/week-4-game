@@ -9,6 +9,7 @@ var pcWin = 0;
 
 
 function clear(){
+
     $("#pcNumber").empty();
     $("#myScore").html(0);
     counter = 0;
@@ -20,7 +21,7 @@ function clear(){
     for (var i = 0; i < 12; i++){
         numberOptions[i] = i+1;
     }
-console.log(numberOptions);
+
     var a, b, i;
     for (i = numberOptions.length; i; i--) {
         a = Math.floor(Math.random() * i);
@@ -28,7 +29,7 @@ console.log(numberOptions);
         numberOptions[i - 1] = numberOptions[a];
         numberOptions[a] = b;
     }
-console.log(numberOptions);
+
  
 
     var imageCrystal = $("#blue");
@@ -51,6 +52,7 @@ console.log(numberOptions);
 
 
   $(".crystal-image").on("click", function() {
+
     var crystalValue = ($(this).attr("data-crystalvalue"));
     crystalValue = parseInt(crystalValue);
 
@@ -76,3 +78,9 @@ console.log(numberOptions);
     }
 
   });
+
+  $("button").on("click", function(){
+    
+    $("#mainMenu").toggle();
+
+  })
