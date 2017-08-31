@@ -64,7 +64,7 @@ function clear(){
     if (counter == targetNumber) {
       myWin++;
       $("#wins").html(myWin);
-      alert("You Win!!"+" You Score"+counter);
+      alert("You Have Won!! You Scored "+counter);
       clear();
 
     }
@@ -72,7 +72,7 @@ function clear(){
     else if (counter >= targetNumber) {
       pcWin++;
       $("#losses").html(pcWin);
-      alert("You loose!!"+" You Score"+counter);
+      alert("You loose!! You Scored "+counter);
       clear();
 
     }
